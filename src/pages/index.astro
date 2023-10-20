@@ -1,30 +1,194 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import { Image } from "astro:assets";
 import "@/styles/globals.css";
+import myImage from "../assets/profilePictureCircle.png";
 ---
 
-<Layout title="Welcome to Astro.">
-  <div class="flex flex-col h-full w-screen justify-center">
-    <div class="text-4xl p-4">My name is Jakob Evangelista</div>
-    <div class="text-2xl p-4">
-      I'm a fullstack software engineer and I run 2 companies, PlusEv Solution
-      and PlusEv Labs
+<Layout title="Jakob Evangelista Portfolio">
+  <div class="flex w-full">
+    <div class="fixed inset-0 flex justify-center sm:px-8">
+      <div class="flex w-full max-w-7xl lg:px-8">
+        <div
+          class="w-full bg-white ring-1 ring-zinc-100 dark:bg-zinc-900 dark:ring-zinc-300/20"
+        >
+        </div>
+      </div>
     </div>
-    <div class="flex flex-col p-4">
-      <div class="text-xl underline">Links:</div>
-      <ul class="p-4">
-        <li><a href="https://github.com/jakobevangelista">Github</a></li>
-        <br />
-        <li><a href="https://instagram.com/jakeplusev">Instagram</a></li><br />
-        <li>
-          <a href="https://www.youtube.com/@jakeplusev">Youtube</a>
-        </li><br />
-        <li><a href="https://tiktok.com/@jakeplusev">TikTok</a></li>
-      </ul>
-    </div>
-    <div>
-      (this is just the start, lots of changes happening once i come home from
-      the gym)
+  </div>
+  <div class="pointer-events-none relative z-50 flex flex-none flex-col"></div>
+  <div class="flex-none"></div>
+  <div class="sm:px-8 mt-64">
+    <div class="mx-auto w-full max-w-7xl lg:px-8">
+      <div class="relative px-4 sm:px-8 lg:px-12">
+        <div class="mx-auto max-w-2xl lg:max-w-5xl">
+          <div class="max-w-2xl mx-auto">
+            <Image
+              class="rounded-full h-72 w-72 mx-auto"
+              src={myImage}
+              alt="Profile"
+            />
+            <div
+              class="text-4xl text-center font-bold tracking-tight text-zinc-100 sm:text-5xl"
+            >
+              Software engineer and founder.
+            </div>
+            <div
+              class="mt-6 text-base text-center text-zinc-600 dark:text-zinc-400"
+            >
+              I'm Jakob, a software engineer and entrepreneur based in Houston.
+              I'm the founder of PlusEv Labs and PlusEv Solutions, where we
+              develop technologies that empower small business to solve everyday
+              problems with modern day software systems.
+            </div>
+            <div
+              class="mt-6 flex gap-6 mx-auto text-center place-content-center"
+            >
+              <a
+                href="https://github.com/jakobevangelista"
+                class="group -m-1 p-1"
+                target="_blank"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#fcfcfc"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-github group-hover:fill-zinc-600"
+                  ><path
+                    d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"
+                  ></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg
+                ></a
+              >
+              <a
+                href="https://www.instagram.com/jakeplusev/"
+                class="group -m-1 p-1"
+                target="_blank"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#fcfcfc"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-instagram group-hover:fill-zinc-600"
+                  ><rect width="20" height="20" x="2" y="2" rx="5" ry="5"
+                  ></rect><path
+                    d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
+                  ></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"
+                  ></line></svg
+                ></a
+              >
+
+              <a
+                href="https://www.youtube.com/@jakeplusev"
+                class="group -m-1 p-1"
+                target="_blank"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#fcfcfc"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-youtube group-hover:fill-zinc-600"
+                  ><path
+                    d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"
+                  ></path><path d="m10 15 5-3-5-3z"></path></svg
+                ></a
+              >
+              <a
+                href="https://www.tiktok.com/@jakeplusev"
+                class="group -m-1 p-1"
+                target="_blank"
+              >
+                <svg
+                  width="24px"
+                  height="24px"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="group-hover:fill-zinc-600"
+                  ><path
+                    d="M20 7.50414C18.5333 7.56942 15.52 6.75998 15.2 3H12.4V13.9666C12.4 17.0999 9.93253 18.4412 8.289 17.2507C6.20169 15.7389 7.60003 12.5958 10.2 12.9874V9.6583C8.20003 9.6583 4 10.4416 4 15.3374C4 21.6041 10.8146 21.4083 12.4 20.5824C14.9798 19.2385 15.6 17.7827 15.6 14.5541C15.6 11.6166 15.6 9.85413 15.6 9.0708C16.2667 9.39719 18.08 10.0891 20 10.2458"
+                    stroke="#fcfcfc"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"></path></svg
+                >
+                <!-- <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#fcfcfc"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-music-2 group-hover:fill-zinc-600"
+                  ><circle cx="8" cy="18" r="4"></circle><path d="M12 18V2l7 4"
+                  ></path></svg
+                > -->
+              </a>
+              <a href="https://twitter.com">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#fcfcfc"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-twitter group-hover:fill-zinc-600"
+                  ><path
+                    d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"
+                  ></path></svg
+                ></a
+              >
+              <a href="https://discord.gg/JHAcFpXcQ6">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M18.8943 4.34399C17.5183 3.71467 16.057 3.256 14.5317 3C14.3396 3.33067 14.1263 3.77866 13.977 4.13067C12.3546 3.89599 10.7439 3.89599 9.14391 4.13067C8.99457 3.77866 8.77056 3.33067 8.58922 3C7.05325 3.256 5.59191 3.71467 4.22552 4.34399C1.46286 8.41865 0.716188 12.3973 1.08952 16.3226C2.92418 17.6559 4.69486 18.4666 6.4346 19C6.86126 18.424 7.24527 17.8053 7.57594 17.1546C6.9466 16.92 6.34927 16.632 5.77327 16.2906C5.9226 16.184 6.07194 16.0667 6.21061 15.9493C9.68793 17.5387 13.4543 17.5387 16.889 15.9493C17.0383 16.0667 17.177 16.184 17.3263 16.2906C16.7503 16.632 16.153 16.92 15.5236 17.1546C15.8543 17.8053 16.2383 18.424 16.665 19C18.4036 18.4666 20.185 17.6559 22.01 16.3226C22.4687 11.7787 21.2836 7.83202 18.8943 4.34399ZM8.05593 13.9013C7.01058 13.9013 6.15725 12.952 6.15725 11.7893C6.15725 10.6267 6.98925 9.67731 8.05593 9.67731C9.11191 9.67731 9.97588 10.6267 9.95454 11.7893C9.95454 12.952 9.11191 13.9013 8.05593 13.9013ZM15.065 13.9013C14.0196 13.9013 13.1652 12.952 13.1652 11.7893C13.1652 10.6267 13.9983 9.67731 15.065 9.67731C16.121 9.67731 16.985 10.6267 16.9636 11.7893C16.9636 12.952 16.1317 13.9013 15.065 13.9013Z"
+                    stroke="#fcfcfc"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"></path>
+                </svg>
+                <!-- <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="1em"
+                  viewBox="0 0 640 512"
+                  class="group-hover:fill-zinc-600 bg-zinc-500"
+                  stroke="#fcfcfc"
+                  >
+                  <path
+                    d="M524.531,69.836a1.5,1.5,0,0,0-.764-.7A485.065,485.065,0,0,0,404.081,32.03a1.816,1.816,0,0,0-1.923.91,337.461,337.461,0,0,0-14.9,30.6,447.848,447.848,0,0,0-134.426,0,309.541,309.541,0,0,0-15.135-30.6,1.89,1.89,0,0,0-1.924-.91A483.689,483.689,0,0,0,116.085,69.137a1.712,1.712,0,0,0-.788.676C39.068,183.651,18.186,294.69,28.43,404.354a2.016,2.016,0,0,0,.765,1.375A487.666,487.666,0,0,0,176.02,479.918a1.9,1.9,0,0,0,2.063-.676A348.2,348.2,0,0,0,208.12,430.4a1.86,1.86,0,0,0-1.019-2.588,321.173,321.173,0,0,1-45.868-21.853,1.885,1.885,0,0,1-.185-3.126c3.082-2.309,6.166-4.711,9.109-7.137a1.819,1.819,0,0,1,1.9-.256c96.229,43.917,200.41,43.917,295.5,0a1.812,1.812,0,0,1,1.924.233c2.944,2.426,6.027,4.851,9.132,7.16a1.884,1.884,0,0,1-.162,3.126,301.407,301.407,0,0,1-45.89,21.83,1.875,1.875,0,0,0-1,2.611,391.055,391.055,0,0,0,30.014,48.815,1.864,1.864,0,0,0,2.063.7A486.048,486.048,0,0,0,610.7,405.729a1.882,1.882,0,0,0,.765-1.352C623.729,277.594,590.933,167.465,524.531,69.836ZM222.491,337.58c-28.972,0-52.844-26.587-52.844-59.239S193.056,219.1,222.491,219.1c29.665,0,53.306,26.82,52.843,59.239C275.334,310.993,251.924,337.58,222.491,337.58Zm195.38,0c-28.971,0-52.843-26.587-52.843-59.239S388.437,219.1,417.871,219.1c29.667,0,53.307,26.82,52.844,59.239C470.715,310.993,447.538,337.58,417.871,337.58Z"
+                  ></path></svg
+                > -->
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </Layout>
